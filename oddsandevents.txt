@@ -1,0 +1,6 @@
+-I had an issue where the numbers would be added to the number bank, but as soon as they
+were added, they would disappear and not be saved into the bank.
+After some research, I found that what was happening was the form was being submitted or page being reloaded,
+so thats why the number would disappear. In order to fix this problem,
+I had to use event.PreventDefault() function
+in order to prevent the form from submitting or page reloading. 
